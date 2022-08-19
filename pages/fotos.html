@@ -4,7 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!--css-->
+     <link rel="stylesheet" href="../css/mediaQueries.css">
      <link rel="stylesheet" href="../css/style.css">
+     <script src="https://kit.fontawesome.com/eb6a430b3d.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/eb6a430b3d.js" crossorigin="anonymous"></script>
      <!--Font-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +15,9 @@
     <title>Fotos</title>
 </head>
 <body>
-  <div class="box__menu--fotos">
+  <nav class="box__menu--fotos">
     
-    <img src="..//Imagenes/logo.png" alt="logo" width="100px" height="70px">
+    <img class="logo__fotos" src="..//Imagenes/logo.png" alt="logo" width="200px" height="70px">
     
     <ul>
         <li><a href="./fotos.html">Fotos</a></li>
@@ -23,30 +25,43 @@
         <li><a href="./videos.html">Videos</a></li>
         <li><a href="#">Sonidos</a></li>
         <li class="box__log--fotos"><a href="#">Explorar</a></li>
-        <li><a href="../index.html">Ir Inicio</a></li>
+        <li><a href="../index.html">Ir Inicio</a></li> 
     </ul>
-  </div>
+
+    <div style="color: #edede9;" class="menu__bar--fotos">
+        <i class="fa-solid fa-bars"></i>
+    </div>
   
- <div class="box__nav--fotos">
-      <h1>
+
+</nav>
+
+
+  
+<div class="box__nav--fotos">
+      
+    <h1>
         Más de 5k de fotos libres de copyright
-      </h1>
+    </h1>
 
-      <input type="text"  placeholder="Busca Imágenes, Videos y Sonidos..." required>
+    <input type="text"  placeholder="Busca Imágenes, Videos y Sonidos..." required>
 
-       <h2>Imágenes populares: Fondos de pantalla, ballenas, medusas, mar, oceano</h2>
+    <h2>Imágenes populares: Fondos de pantalla, ballenas, medusas, mar, oceano</h2>
 
- </div>
+</div>
 
  <div class="box__galeria">
-  <img src="../Imagenes/fotos/ballena1.jfif" alt="ballena" width="400px" height="300px">
-  <img src="../Imagenes/fotos/ballena2.jfif" alt="ballena" width="400px" height="300px">
-  <img src="../Imagenes/fotos/ballena3.jpg" alt="ballena" width="400px" height="300px">
-  <img src="../Imagenes/fotos/ballena4.jfif" alt="ballena" width="400px" height="300px">
-  <img src="../Imagenes/fotos/medusas1.jfif" alt="medusa" width="400px" height="300px">
-  <img src="../Imagenes/fotos/medusas2.jpg" alt="medusa" width="400px" height="300px">
-  <img src="../Imagenes/fotos/medusas3.jfif" alt="medusa" width="400px" height="300px">
-  <img src="../Imagenes/fotos/pulpo.jpg" alt="pulpo" width="400px" height="300px">
+   <div class="grid-item wide" style="background-image: url(../Imagenes/fotos/ballena1.jfif);"></div>
+   <div class="grid-item" style="background-image: url(../Imagenes/fotos/ballena2.jfif);"></div>
+   <div class="grid-item" style="background-image: url(../Imagenes/fotos/ballena3.jpg);"></div>
+   <div class="grid-item" style="background-image: url(../Imagenes/fotos/ballena4.jfif);"></div>
+   <div class="grid-item tall" style="background-image: url(../Imagenes/fotos/caballito.jpg);"></div>
+   <div class="grid-item" style="background-image: url(../Imagenes/fotos/medusas1.jfif);"></div>
+   <div class="grid-item wide" style="background-image: url(../Imagenes/fotos/medusas2.jpg);"></div>
+   <div class="grid-item" style="background-image: url(../Imagenes/fotos/medusas3.jfif);"></div>
+   <div class="grid-item" style="background-image: url(../Imagenes/fotos/orca.jpg);"></div>
+   <div class="grid-item wide" style="background-image: url(../Imagenes/fotos/pulpo.jpg);"></div>
+   <div class="grid-item wide" style="background-image: url(../Imagenes/fotos/narval.jpg);"></div>
+   
 
  </div>
 

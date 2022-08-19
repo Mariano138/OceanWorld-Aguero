@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--css-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaQueries.css">
+    <script src="https://kit.fontawesome.com/eb6a430b3d.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/eb6a430b3d.js" crossorigin="anonymous"></script>
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +18,13 @@
 </head>
 <body class="box__body--index">
     <!-- Barra de Inicio -->
-     <nav class="box__menu">
+     
+<header>
+    
+   <nav class="box__menu">
+    
+    <img src="./Imagenes/logo.png" alt="logo">
+
     <ul>
         <li>
            <a href="./index.html">Inicio</a>  
@@ -34,74 +42,138 @@
            <a href="pages/ayudaanimales.html">Ayuda Animales</a> 
         </li>
     </ul>
-    </nav>
 
-      <!-- Sección lateral izquierda de la pagina -->
-      <div class="box__estructura">
-      <div class="seccion__izquierda">
-        <h2 class="titulos__secciones">
-            Secciones
-        </h2>
-        <ul>
-        <li><a href="#">>Ballenas</a></li>
-        <li><a href="#">>Pulpos </a></li>
-        <li><a href="#">>Tortugas</a></li>
-        <li><a href="#">>Peces</a></li>
-        <li><a href="#">>Orcas</a></li>
-        <li><a href="#">>Medusas</a></li>
-        <li><a href="#">>Tiburones</a></li>
-        <li><a href="#">>Focas</a></li>
-        <li><a href="#">>Mantarayas</a></li>
-        </ul>
-        
-        
-        <h2 class="titulos__secciones">
-            Animales Mitológicos
-        </h2>
-        
-        <ul>
-        <li><a href="#">>The Bloop</a></li>
-        <li><a href="#">>Kraken</a></li>
-        <li><a href="#">>Leviatan</a></li>
-        <li><a href="#">>Monstruo del lago Ness</a></li>
-        <li><a href="#">>Ningen</a></li>
-        </ul>
-        
-        </div>
+    <div style="color: #edede9;" class="search__bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+ 
+    <div style="color: #edede9;" class="menu__bar">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+
+
+    </nav>
     
+</header>
     
     
     <!-- Parte central de la pagina -->
+    
+    <div class="bienvenida__index">
+        <H1>Bienvenido a Ocean World</H1>
+    </div>
 
-    <div class="centro">
-    <H1>Bienvenido a Ocean World!</H1>
-    <h2>
-        Nos alegra tenerte por aqui... 
-    </h2>
+
+
+    <main class="centro">
     
-    <h2>
-        Próximo evento marino: 15 de febrero 2023
-        Horario:de 9:00 a 12:00
-    </h2>
+      <!-- Sección lateral izquierda de la pagina -->
+
+        <div class="seccion__izquierda">
+            <h2>
+                Secciones
+            </h2>
+            <ul>
+            <li><a href="#">Ballenas</a></li>
+            <li><a href="#">Pulpos </a></li>
+            <li><a href="#">Tortugas</a></li>
+            <li><a href="#">Peces</a></li>
+            <li><a href="#">Orcas</a></li>
+            <li><a href="#">Medusas</a></li>
+            <li><a href="#">Tiburones</a></li>
+            <li><a href="#">Focas</a></li>
+            <li><a href="#">Mantarayas</a></li>
+            </ul>
+            
+            
+            <h2>
+                Animales Mitológicos
+            </h2>
+            
+            <ul>
+            <li><a href="#">The Bloop</a></li>
+            <li><a href="#">Kraken</a></li>
+            <li><a href="#">Leviatan</a></li>
+            <li><a href="#">Monstruo del lago Ness</a></li>
+            <li><a href="#">Ningen</a></li>
+            </ul>
+            
+            </div>
+
+
+         <!-- Fecha del evento -->
+
+
+        <div class="menu__derecha">
+
+            <ul>
+                <li>
+                    <span style="font-size: 30px; font-weight: bolder;">15</span>
+                    <div class="menu__derecha--fecha">
+                        <h3> Febrero 2023</h3>
+                        <p>Prox. Evento</p>
+                    </div>
+                </li>
+                
+                <li>
+                    
+                    <div class="menu__derecha--fecha">
+                        <h3>Horario</h3>
+                        <p>De 9:00 a 12:00 hs</p>
+                    </div>
+                </li>
+                
+                <a class="weatherwidget-io" href="https://forecast7.com/es/n33d04n68d88/lujan-de-cuyo/" data-label_1="LUJÁN DE CUYO" data-label_2="WEATHER" data-font="Ubuntu" data-mode="Current" data-days="3" data-theme="original" data-basecolor="rgba(255, 255, 255, 0)" >LUJÁN DE CUYO WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+					
+            </ul>
     
+            
+    
+        </div>
+
+
+     <!-- Parte central de la pagina -->
+
+<div class="info__content">
+
+
+    <div class="bienvenida__index--h2">
+        <h2>
+            Nos alegra tenerte por aqui... 
+        </h2>
+    </div>
+    
+
     <h3>
         <u>
             Video presentación del evento
         </u>
     </h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3_CGNXcOhB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h4>
-       <a href="https://www.youtube.com/watch?v=3_CGNXcOhB0"
-       target="_blank">Click aqui para saber mas (se abrira en una nueva pestaña)</a>
-        
-    </h4>
+    
+    <div class="iframe__video">
+    
+    <iframe style="border-radius: 30px;" src="https://www.youtube.com/embed/3_CGNXcOhB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
     </div>
+    <div class="buttom__main">
+
+    <button class="button"><a target="_blank" href="https://www.youtube.com/watch?v=3_CGNXcOhB0">Lugar del evento</a> </button>
+    
+     </div>
+    
+    </div>
+
+</main>
 
 
 
       <!--Sección Lateral derecha de la pagina -->  
     
-    <div class="seccion__derecha">
+    <!-- <div class="seccion__derecha">
 
        <input type="text"  placeholder="Buscar" required>
     
@@ -131,7 +203,7 @@
 
       </div>
     </div>
- 
+  -->
       <!--Footer-->
 
 <footer>
