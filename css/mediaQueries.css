@@ -30,6 +30,10 @@
         height: 120vh;
     }
 
+    .menu__derecha {
+        height: 500px;
+    }
+
 }
 
 
@@ -65,7 +69,9 @@
     .centro {
         height: 100vh;
     }
-
+    .menu__derecha {
+        height: 500px;
+    }
    
 }
 
@@ -170,7 +176,9 @@
     grid-column: 5 / 5;
 }
 
-
+.menu__derecha {
+    height: auto;
+}
 }
 
 @media only screen and (max-width:480px) {
@@ -209,7 +217,9 @@
     border-radius: 20px;
 }
 
-
+.menu__derecha {
+    height: auto;
+}
 }
 
 
@@ -673,7 +683,10 @@
 }
 
  }
-@media only screen and (max-width: 480px) {
+
+
+
+ @media only screen and (max-width: 480px) {
  .box__contacto--donar {
     margin-top: 150px;
 } 

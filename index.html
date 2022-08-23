@@ -4,41 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--css-->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mediaQueries.css">
-    <script src="https://kit.fontawesome.com/eb6a430b3d.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/eb6a430b3d.js" crossorigin="anonymous"></script>
+    <!-- Kit -->
+    <script src="https://kit.fontawesome.com/eb6a430b3d.js" crossorigin="anonymous"></script>
+    <!-- Animaciones -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
+<!--css-->
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/mediaQueries.css">
+
 <title>Ocean World</title>
 
 </head>
 <body class="box__body--index">
+
+    <video src="./imagenes/peces.mp4" autoplay="true" muted="true" loop="true" poster="./imagenes/peces.jpg"></video> 
+    
     <!-- Barra de Inicio -->
      
 <header>
     
    <nav class="box__menu">
     
-    <img src="./Imagenes/logo.png" alt="logo">
+    <img class="animate__animated animate__fadeInLeft" src="./imagenes/logo.png" alt="logo">
 
     <ul>
-        <li>
+        <li class="animate__animated animate__fadeInDownBig" style="animation-delay: 0.1s ;">
            <a href="./index.html">Inicio</a>  
         </li>
-        <li>
+        <li class="animate__animated animate__fadeInDownBig" style="animation-delay: 0.2s ;">
            <a href="pages/foro.html">Foro</a> 
         </li>
-        <li>
+        <li class="animate__animated animate__fadeInDownBig" style="animation-delay: 0.3s ;">
            <a href="pages/fotos.html">Fotos</a> 
         </li>
-        <li>
+        <li class="animate__animated animate__fadeInDownBig" style="animation-delay: 0.4s ;">
            <a href="pages/videos.html">Videos</a> 
         </li>
-        <li>
+        <li class="animate__animated animate__fadeInDownBig" style="animation-delay: 0.5s ;">
            <a href="pages/ayudaanimales.html">Ayuda Animales</a> 
         </li>
     </ul>
@@ -60,7 +70,7 @@
     
     <!-- Parte central de la pagina -->
     
-    <div class="bienvenida__index">
+    <div class="bienvenida__index  animate__animated animate__pulse">
         <H1>Bienvenido a Ocean World</H1>
     </div>
 
@@ -70,7 +80,7 @@
     
       <!-- Sección lateral izquierda de la pagina -->
 
-        <div class="seccion__izquierda">
+        <div class="seccion__izquierda animate__animated animate__bounceInLeft" style="animation-delay: 1s ;">
             <h2>
                 Secciones
             </h2>
@@ -105,12 +115,12 @@
          <!-- Fecha del evento -->
 
 
-        <div class="menu__derecha">
+        <div class="menu__derecha animate__animated animate__fadeInDown" style="animation-delay: 1s ;">
 
             <ul>
                 <li>
                     <span style="font-size: 30px; font-weight: bolder;">15</span>
-                    <div class="menu__derecha--fecha">
+                    <div class="menu__derecha--fecha"> 
                         <h3> Febrero 2023</h3>
                         <p>Prox. Evento</p>
                     </div>
@@ -123,15 +133,17 @@
                         <p>De 9:00 a 12:00 hs</p>
                     </div>
                 </li>
-                
-                <a class="weatherwidget-io" href="https://forecast7.com/es/n33d04n68d88/lujan-de-cuyo/" data-label_1="LUJÁN DE CUYO" data-label_2="WEATHER" data-font="Ubuntu" data-mode="Current" data-days="3" data-theme="original" data-basecolor="rgba(255, 255, 255, 0)" >LUJÁN DE CUYO WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-					
+					<hr style="display: none;">
             </ul>
     
-            
+
+            <div class="clima">
+            <a class="weatherwidget-io" href="https://forecast7.com/es/n33d04n68d88/lujan-de-cuyo/" data-label_1="LUJÁN DE CUYO" data-label_2="WEATHER" data-font="Ubuntu" data-mode="Current" data-days="3" data-theme="original" data-basecolor="rgba(255, 255, 255, 0)" >LUJÁN DE CUYO WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+          </div>
+
     
         </div>
 
@@ -141,7 +153,7 @@
 <div class="info__content">
 
 
-    <div class="bienvenida__index--h2">
+    <div class="bienvenida__index--h2 animate__animated animate__fadeInDown" style="animation-delay: 1s ;">
         <h2>
             Nos alegra tenerte por aqui... 
         </h2>
@@ -213,7 +225,7 @@
      <div class="box__footer">
     
         <div class="logo"> 
-          <img src="./Imagenes/logo.png" alt="logo">
+          <img src="./imagenes/logo.png" alt="logo">
         </div>
      
         <div class="terms">
@@ -254,12 +266,12 @@
     <div class="box__footer">
         <h2>
             <u>Ubicación & Contacto </u> </h2>
-            <ulbox__footer>
+            <ul>
                 <li><a href="#">Avenida siempre viva 742</a></li>
                 <li><a href="#">Lujan de Cuyo</a></li>
                 <li><a href="#">Tel (9999) 99-9999</a></li>
                 <li><a href="#">info@oceanworld.com.ar</a></li>
-            </ulbox__footer>
+            </ul>
         
        
     
@@ -268,20 +280,20 @@
     <div class="box__footer--img">
       <a href="https://facebook.com"
         target="_blank">
-        <img src="./Imagenes/Facebook-Icon.png" alt="Facebook"
+        <img src="./imagenes/facebook-icon.png" alt="facebook"
         height="50" width="50">
         </a>
 
         <a href="https://twitter.com"
         target="_blank">
-            <img src="./Imagenes/Twitter-Icon.jfif" alt="Twitter"
+            <img src="./imagenes/twitter-icon.jfif" alt="twitter"
             height="50" width="50">
 
         </a>
 
         <a href="https://instagram.com"
         target="_blank">
-        <img src="./Imagenes/Instagram-Icon.png" alt="Instagram"
+        <img src="./imagenes/instagram-icon.png" alt="instagram"
             height="50" width="50">
         </a>
 

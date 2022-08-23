@@ -1,31 +1,40 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--css-->
-     <link rel="stylesheet" href="../css/mediaQueries.css">
-     <link rel="stylesheet" href="../css/style.css">
-     <script src="https://kit.fontawesome.com/eb6a430b3d.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/eb6a430b3d.js" crossorigin="anonymous"></script>
+    
+      <!-- Kit -->
+    <script src="https://kit.fontawesome.com/eb6a430b3d.js" crossorigin="anonymous"></script>
+    <!-- Animaciones -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
      <!--Font-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     
+ <!--css-->
+ <link rel="stylesheet" href="../css/mediaQueries.css">
+ <link rel="stylesheet" href="../css/style.css">
+
     <title>Fotos</title>
 </head>
 <body>
   <nav class="box__menu--fotos">
     
-    <img class="logo__fotos" src="..//Imagenes/logo.png" alt="logo" width="200px" height="70px">
+    <img class="logo__fotos animate__animated animate__fadeInLeft" src="../imagenes/logo.png" alt="logo" width="200px" height="70px">
     
     <ul>
-        <li><a href="./fotos.html">Fotos</a></li>
-        <li><a href="#">Ilustraciónes</a></li>
-        <li><a href="./videos.html">Videos</a></li>
-        <li><a href="#">Sonidos</a></li>
-        <li class="box__log--fotos"><a href="#">Explorar</a></li>
-        <li><a href="../index.html">Ir Inicio</a></li> 
+        <li class="animate__animated animate__fadeInLeft" style="animation-delay: 0.1s ;"><a href="./fotos.html">Fotos</a></li>
+        <li class="animate__animated animate__fadeInLeft" style="animation-delay: 0.2s ;"><a href="#">Ilustraciónes</a></li>
+        <li class="animate__animated animate__fadeInLeft" style="animation-delay: 0.3s ;"><a href="./videos.html">Videos</a></li>
+        <li class="animate__animated animate__fadeInLeft" style="animation-delay: 0.4s ;"><a href="#">Sonidos</a></li>
+        <li class="animate__animated animate__fadeInLeft" style="animation-delay: 0.5s ;"><a href="#">Explorar</a></li>
+        <li class="animate__animated animate__fadeInLeft" style="animation-delay: 0.6s ;"><a href="../index.html">Ir Inicio</a></li> 
     </ul>
 
     <div style="color: #edede9;" class="menu__bar--fotos">
@@ -39,7 +48,7 @@
   
 <div class="box__nav--fotos">
       
-    <h1>
+    <h1 class="animate__animated animate__fadeIn" style="animation-delay: 1s ;" >
         Más de 5k de fotos libres de copyright
     </h1>
 
@@ -50,17 +59,17 @@
 </div>
 
  <div class="box__galeria">
-   <div class="grid-item wide" style="background-image: url(../Imagenes/fotos/ballena1.jfif);"></div>
-   <div class="grid-item" style="background-image: url(../Imagenes/fotos/ballena2.jfif);"></div>
-   <div class="grid-item" style="background-image: url(../Imagenes/fotos/ballena3.jpg);"></div>
-   <div class="grid-item" style="background-image: url(../Imagenes/fotos/ballena4.jfif);"></div>
-   <div class="grid-item tall" style="background-image: url(../Imagenes/fotos/caballito.jpg);"></div>
-   <div class="grid-item" style="background-image: url(../Imagenes/fotos/medusas1.jfif);"></div>
-   <div class="grid-item wide" style="background-image: url(../Imagenes/fotos/medusas2.jpg);"></div>
-   <div class="grid-item" style="background-image: url(../Imagenes/fotos/medusas3.jfif);"></div>
-   <div class="grid-item" style="background-image: url(../Imagenes/fotos/orca.jpg);"></div>
-   <div class="grid-item wide" style="background-image: url(../Imagenes/fotos/pulpo.jpg);"></div>
-   <div class="grid-item wide" style="background-image: url(../Imagenes/fotos/narval.jpg);"></div>
+   <div class="grid-item wide" style="background-image: url(../imagenes/fotos/ballena1.jfif);"></div>
+   <div class="grid-item" style="background-image: url(../imagenes/fotos/ballena2.jfif);"></div>
+   <div class="grid-item" style="background-image: url(../imagenes/fotos/ballena3.jpg);"></div>
+   <div class="grid-item" style="background-image: url(../imagenes/fotos/ballena4.jfif);"></div>
+   <div class="grid-item tall" style="background-image: url(../imagenes/fotos/caballito.jpg);"></div>
+   <div class="grid-item" style="background-image: url(../imagenes/fotos/medusas1.jfif);"></div>
+   <div class="grid-item wide" style="background-image: url(../imagenes/fotos/medusas2.jpg);"></div>
+   <div class="grid-item" style="background-image: url(../imagenes/fotos/medusas3.jfif);"></div>
+   <div class="grid-item" style="background-image: url(../imagenes/fotos/orca.jpg);"></div>
+   <div class="grid-item wide" style="background-image: url(../imagenes/fotos/pulpo.jpg);"></div>
+   <div class="grid-item wide" style="background-image: url(../imagenes/fotos/narval.jpg);"></div>
    
 
  </div>
@@ -77,7 +86,7 @@
      <div class="box__footer">
     
         <div class="logo"> 
-          <img src="../Imagenes/logo.png" alt="logo">
+          <img src="../imagenes/logo.png" alt="logo">
         </div>
      
         <div class="terms">
@@ -118,12 +127,12 @@
     <div class="box__footer">
         <h2>
             <u>Ubicación & Contacto </u> </h2>
-            <ulbox__footer>
+            <ul>
                 <li><a href="#">Avenida siempre viva 742</a></li>
                 <li><a href="#">Lujan de Cuyo</a></li>
                 <li><a href="#">Tel (9999) 99-9999</a></li>
                 <li><a href="#">info@oceanworld.com.ar</a></li>
-            </ulbox__footer>
+            </ul>
         
        
     
@@ -132,20 +141,20 @@
     <div class="box__footer--img">
       <a href="https://facebook.com"
         target="_blank">
-        <img src="../Imagenes/Facebook-Icon.png" alt="Facebook"
+        <img src="../imagenes/facebook-icon.png" alt="facebook"
         height="50" width="50">
         </a>
 
         <a href="https://twitter.com"
         target="_blank">
-            <img src="../Imagenes/Twitter-Icon.jfif" alt="Twitter"
+            <img src="../imagenes/twitter-icon.jfif" alt="twitter"
             height="50" width="50">
 
         </a>
 
         <a href="https://instagram.com"
         target="_blank">
-        <img src="../Imagenes/Instagram-Icon.png" alt="Instagram"
+        <img src="../imagenes/instagram-icon.png" alt="instagram"
             height="50" width="50">
         </a>
 
