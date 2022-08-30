@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1600px) {
+ @media only screen and (min-width: 1600px) {
     
     /* INDEX */
 
@@ -72,7 +72,7 @@
 }
 
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 992px) {
 
     /* INDEX */
     
@@ -106,6 +106,13 @@
 }
 
 
+
+/* seccion de delfines */
+
+.delfines__padding {
+    padding-left: 50px;
+}
+
 }
 
 @media only screen and (max-width:480px) {
@@ -113,7 +120,7 @@
     /* INDEX */
     
     .bienvenida__index--h2 h2 {
-        grid-column: 1 / 13;
+        grid-column: 1 / 12;
         
     }
 
@@ -144,9 +151,13 @@
     grid-column: 1 / 12;
     border-radius: 20px;
 }
+/* seccion de delfines */
 
-
+.delfin__img {
+    height: 250px;
 }
+
+} 
 
 
 /* Media de fotos y videos */
