@@ -1,0 +1,67 @@
+.box__body--donar {
+    background: linear-gradient(135deg,#03001e,#7303c0,#f64f59,#fdeff9);
+    background-size: 500%; 
+    position: relative;
+    animation: animacion 10s ease infinite;
+
+    @keyframes animacion {
+        0%{background-position: 0 50%;}
+        50%{background-position: 100% 50%;}
+        100%{background-position: 0 50%;}
+    }
+
+    
+    .box__estructura--donar {
+        height: fit-content;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        text-align: center;
+        color: #edede9;
+    
+        h1 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+
+        ol {
+            border: 3px solid #edede9;
+            margin-top: 30px;
+
+            li {
+                font-size: 19px;
+                padding: 10px;
+            
+            a {
+
+                color: blue;
+            }
+            }
+        } 
+    }
+
+
+    .contacto {
+
+        h2 {
+            color: #edede9;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+            font-size: 40px;
+        }
+
+
+        .h1__donaciones {
+            color: #edede9;
+            font-size: 25px;
+        }
+    }
+}

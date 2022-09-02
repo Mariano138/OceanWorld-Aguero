@@ -1,0 +1,130 @@
+.box__body--foro {
+    background-image: url(../imagenes/fondo-foro.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    header {
+    .nav__foro {
+        background-color: #161a1d;
+        padding: 30px;
+    
+        ul {
+            justify-content: space-between;
+            
+            li {
+                list-style: none;
+                
+                a {
+                    text-decoration: none;
+                    color: #edede9;
+                    cursor: pointer;
+                    font-size: 20px;
+                    font-weight: bold;
+                      
+                    &:hover {
+                        color: #d6ccc2;
+                    }
+                }
+            }
+        }
+    
+        .h5__foro a {
+            text-decoration: none;
+            color: #edede9;
+        }
+    
+    }
+    }
+
+    .box__foro--img {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .foro__h1 {
+        background-color: #161a1d;
+        width: 100%;
+        color: #4cc9f0;
+        padding: 10px;
+
+    }
+
+    .box__estructura--foro {
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        width: 100%;
+
+        
+    .box__cuerpo--foro {
+        color: #4cc9f0;
+        background-color: #161a1d;
+        height: fit-content;
+
+        ul {
+            li {
+                a {
+                    color: #4cc9f0;
+                    text-decoration: none;
+                    margin-left: 60px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+        h2 {
+            font-size: 25px;
+       }
+
+
+       .h2__foro {
+        padding-top: 15px;
+    }
+
+    hr {
+        height: 2px;
+        background-color: #4cc9f0;
+        border: #4cc9f0;
+      }
+
+    }
+
+    .box__derecha--foro {
+        height: fit-content;
+    
+        h2 {
+            color: #4cc9f0;
+            text-align: center;
+            font-size: 25px; 
+        }
+       ul {
+        display: block;
+        position: relative;
+        overflow: hidden;
+
+        li {
+            padding-top: 15px;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 10px;
+            margin-bottom: 1vw;
+            border-bottom: 1px solid black;
+        
+       
+        a {
+            color: #4cc9f0;
+            text-decoration: none;
+        }
+      
+    } 
+       
+    } 
+   }
+ }
+
+}
+
+
