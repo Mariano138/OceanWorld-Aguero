@@ -8,9 +8,29 @@ header {
        
          ul {
             justify-content: space-around;
+
+
+            @for $navItem from 1 through 5 {
+                
+                .nav-item:nth-child(#{$navItem}) {
+                    animation-delay: $navItem*0.2s;
+                }
+
+                @media only screen and (max-width: 992px) {
+                    
+                    @for $navItem from 1 through 5 {
+                
+                        .nav-item:nth-child(#{$navItem}) {
+                            animation: none;
+                        }
+            
+                }
+                
+            }
             
             li {
                 list-style: none;
+
 
                 a {
                   text-decoration: none;
@@ -27,9 +47,13 @@ header {
 
          }
 
-         img {
-            width: 150px;
-            display: flex;
-         }
+         
     }
+}
+
+img {
+    width: 150px;
+    display: flex;
+ }
+
 }

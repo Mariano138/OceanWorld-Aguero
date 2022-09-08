@@ -170,62 +170,44 @@ video {
 
 .nadar__h2 {
     background-color: $mainColorIndex;
-    display: $dF;
-    justify-content: $jF;
     padding-top: 20px;
     padding-bottom: 20px;
     color: $mainWhiteColor; 
-    margin-bottom: 0;
-    text-align: $alingTCenter;  
+    margin-bottom: 0; 
+    @include flex-center(); 
 }
 
 .nadar {
-    background-color: #e8eff3;
+    background-color: map-get($colorsecciones, blanco );
     
     .box__nadar--contenedor {
         margin-top: 20px;
    
 
     .img__nadar--container {
-        overflow: hidden;
-        border: 2px ;
-        border-radius: 20px;
+       @extend %fotosContainer;
         
     .img__nadar {
-        width: 100%;
-        height: 100%;
-        transition: 0.5s;
-        object-fit: cover;
-        border: 2px solid;
-        border-radius: 20px;
-
-        &:hover {
-            transform: scale(1.2);
-        }
+        @extend %fotos;
     }
   }
  
 
     .box__texto {
         margin-top: 10px;
-        display: $dF;
-        justify-content: $jF;
+        @include flex-center();
     
         .ballena__icon {
             width: 200px;
         }
 
         .box__titulo--texto {
-            display: $dF;
-            justify-content: $jF;
-            text-align: $alingTCenter;
+            @include flex-center();
+            
         }
     
         .box__texto--mensaje {
-            display: $dF;
-            justify-content: $jF;
-            text-align: $alingTCenter;
-            align-items: $alingICenter;
+            @include flex-center();
             font-size: 20px;
         }
     }
@@ -238,7 +220,8 @@ video {
 }
 
 .delfines {
-    background-color: #e8eff3;
+    background-color: map-get($colorsecciones, blanco );
+    
 
     .border__delfin {
         border-radius: 20px;
@@ -249,10 +232,8 @@ video {
     
 
     .delfines__padding {
-        display: $dF;
-        justify-content: $jF;
-        align-items: $alingICenter;
-        text-align: $alingTCenter;
+        @include flex-center();
+
 
         h3 {
             align-items: $alingICenter;
@@ -269,31 +250,19 @@ video {
 }
 
 .pinguino__main {
-    background-color: $mainColorIndex;
+    background-color: map-get($colorsecciones, azul );
+    
 
     .pinguino__img--container {
-        overflow: hidden;
-        border: 2px ;
-        border-radius: 20px;
+        @extend %fotosContainer;
 
     img {
-        width: 100%;
-        height: 100%;
-        transition: 0.5s;
-        object-fit: cover;
-        border-radius: 20px;
-
-        &:hover {
-            transform: scale(1.2);
-        }
+       @extend %fotos;
      }
     }
 
     .pinguino__textAling {
-        display: $dF;
-        justify-content: $jF;
-        text-align: $alingTCenter;
-        align-items: $alingICenter;
+        @include flex-center();
        
         p {
             font-size: 20px;
