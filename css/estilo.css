@@ -244,15 +244,6 @@ header img {
   display: flex;
 }
 
-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 105%;
-  min-height: 100%;
-  transform: translateX(calc((100% - 100vw) / 2));
-  z-index: -2;
-}
 
 .main__index {
   background-image: url(../imagenes/index.jpg);
@@ -901,12 +892,12 @@ audio {
 }
 
 @font-face {
-  .box__body--donar {
+
     font-family: titulos;
     src: url(..font/Brandon_bld.otf);
     font-family: parrafos;
     src: url(../font/Brandon_light.otf);
-  }
+  
 }
 .box__body--donar .h1__main {
   text-align: center;
