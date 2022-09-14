@@ -1,62 +1,89 @@
 .box__body--donar {
-    background: linear-gradient(135deg,#03001e,#7303c0,#f64f59,#fdeff9);
-    background-size: 500%; 
-    position: relative;
-    animation: animacion 10s ease infinite;
+   
 
-    @keyframes animacion {
-        0%{background-position: 0 50%;}
-        50%{background-position: 100% 50%;}
-        100%{background-position: 0 50%;}
-    }
+@font-face {
+font-family: titulos;
+src: url(..font/Brandon_bld.otf);
 
-    
-    .box__estructura--donar {
-        height: fit-content;
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
+font-family: parrafos;
+src: url(../font/Brandon_light.otf);
+}
+
+
+
+    .h1__main {
         text-align: center;
-        color: #edede9;
+        color: #343a40;
+        font-size: 46px;
+        font-family: titulos;
     
-    
-        h1 {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            font-size: 50px;
-            margin-top: 20px;
-        }
-
-        h2 {
-            font-size: 30px;
-            margin-top: 30px;
-        }
-
-        ol {
-            border: 3px solid #edede9;
-            margin-top: 30px;
-            padding-left: 0;
-
-            li {
-                font-size: 19px;
-                padding: 10px;
-                
-            
-            a {
-        
-                color: blue;
-            }
-            }
-        } 
     }
+
+    .p__contacto {
+        text-align: center;
+        color: #343a40;
+        font-size: 20px;
+        margin-bottom: 0;
+        font-family: parrafos;
+        
+    }
+   
+   .img__contacto {
+    background-image: url(../imagenes/contacto.jpg);
+    height: 450px;
+    
+   }
+
+   .como__donar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 40px;
+   }
+
+   .quienes__somos--main {
+    border-radius: 0;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+ .quienes__somos {
+    border-radius: 0;
+    
+ 
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        font-family: titulos;
+    }
+
+    ol {
+        li {
+            font-size: 20px;
+            font-family: parrafos;
+
+            a {
+                color: blue;
+                font-family: parrafos;
+            }
+        }
+    }
+ }
+
+ //contacto
 
 
     .contacto {
+        background-color: #fff;
         
         
 
         h2 {
-            color: #edede9;
+            color: #343a40;
             display: flex;
             justify-content: center;
             margin-bottom: 25px;
@@ -65,7 +92,7 @@
 
 
         .h1__donaciones {
-            color: #edede9;
+            color: #343a40;
             font-size: 25px;
         }
     }
