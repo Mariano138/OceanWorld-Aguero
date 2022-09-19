@@ -244,6 +244,15 @@ header img {
   display: flex;
 }
 
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
 
 .main__index {
   background-image: url(../imagenes/index.jpg);
@@ -274,6 +283,14 @@ header img {
 
 .menu__derecha--main {
   text-align: center;
+}
+.menu__derecha--main .menu__derecha {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.menu__derecha--main .menu__derecha ul li span {
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 .bienvenida {
@@ -361,10 +378,8 @@ header img {
   color: #edede9;
 }
 .menu__derecha .clima {
-  padding-left: 0;
-  padding-bottom: 0;
   margin-top: -2vw;
-  padding: 0vw 2.8228228228vw 0vw 2.8228228228vw;
+  padding: 0vw 2vw 0vw 2vw;
 }
 
 .nadar__h2 {
@@ -456,6 +471,10 @@ footer {
   background-image: url(../imagenes/footer.jpg);
   background-size: cover;
 }
+footer .img-logo {
+  height: 50px;
+  width: 150px;
+}
 footer .box__copyright {
   text-align: center;
 }
@@ -472,6 +491,56 @@ footer .box__copyright {
 }
 .box__body--foro header .nav__foro ul {
   justify-content: space-between;
+}
+.box__body--foro header .nav__foro ul .nav-item:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.box__body--foro header .nav__foro ul .nav-item:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.box__body--foro header .nav__foro ul .nav-item:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.box__body--foro header .nav__foro ul .nav-item:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.box__body--foro header .nav__foro ul .nav-item:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.box__body--foro header .nav__foro ul .nav-item:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.box__body--foro header .nav__foro ul .nav-item:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+@media only screen and (max-width: 992px) {
+  .box__body--foro header .nav__foro ul .nav-item:nth-child(1) {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .box__body--foro header .nav__foro ul .nav-item:nth-child(2) {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .box__body--foro header .nav__foro ul .nav-item:nth-child(3) {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .box__body--foro header .nav__foro ul .nav-item:nth-child(4) {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .box__body--foro header .nav__foro ul .nav-item:nth-child(5) {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 .box__body--foro header .nav__foro ul li {
   list-style: none;
@@ -493,6 +562,10 @@ footer .box__copyright {
 .box__body--foro .box__foro--img {
   display: inline-block;
   width: 100%;
+}
+.box__body--foro .logo-foro {
+  margin: 10px;
+  width: 200px;
 }
 .box__body--foro .foro__h1 {
   background-color: #161a1d;
@@ -556,6 +629,24 @@ footer .box__copyright {
 .box__body--foro .box__estructura--foro .box__derecha--foro ul li a {
   color: #4cc9f0;
   text-decoration: none;
+}
+
+.login-bg {
+  background-image: url(../imagenes/fondo-foro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.login-bg .nav-login {
+  background-color: #161a1d;
+}
+.login-bg ul li a {
+  color: #edede9;
+  text-decoration: none;
+  font-size: 20px;
+}
+.login-bg ul li a:hover {
+  color: #d6ccc2;
 }
 
 audio {
@@ -673,112 +764,10 @@ audio {
   font-family: parrafo;
 }
 
-.content-todo {
-  width: 210px;
-  margin: auto;
-  perspective: 800px;
-  position: relative;
-  margin-top: 50px;
-  height: 150px;
-  background-color: #edede9;
+.img-carousel {
+  height: 90vh;
 }
 
-.content-carrousel-todo {
-  width: 100%;
-  position: absolute;
-  -webkit-animation: rotar 10s infinite linear;
-          animation: rotar 10s infinite linear;
-  transform-style: preserve-3d;
-}
-
-.content-carrousel-todo:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-  cursor: pointer;
-}
-
-.content-carrousel-todo figure {
-  width: 100%;
-  height: 120px;
-  overflow: hidden;
-  position: absolute;
-  box-shadow: 0px 0px 20px 0px black;
-  transition: all 300ms;
-}
-
-.content-carrousel-todo figure:hover {
-  box-shadow: 0px 0px 0px 0px black;
-  transition: all 300ms;
-}
-
-.content-carrousel-todo figure:nth-child(1) {
-  transform: rotateY(0deg) translateZ(300px);
-}
-
-.content-carrousel-todo figure:nth-child(2) {
-  transform: rotateY(40deg) translateZ(300px);
-}
-
-.content-carrousel-todo figure:nth-child(3) {
-  transform: rotateY(80deg) translateZ(300px);
-}
-
-.content-carrousel-todo figure:nth-child(4) {
-  transform: rotateY(120deg) translateZ(300px);
-}
-
-.content-carrousel-todo figure:nth-child(5) {
-  transform: rotateY(160deg) translateZ(300px);
-}
-
-.content-carrousel-todo figure:nth-child(6) {
-  transform: rotateY(200deg) translateZ(300px);
-}
-
-.content-carrousel-todo figure:nth-child(7) {
-  transform: rotateY(240deg) translateZ(300px);
-}
-
-.content-carrousel-todo figure:nth-child(8) {
-  transform: rotateY(280deg) translateZ(300px);
-}
-
-.content-carrousel-todo figure:nth-child(9) {
-  transform: rotateY(320deg) translateZ(300px);
-}
-
-.content-carrousel-todo figure:nth-child(10) {
-  transform: rotateY(360deg) translateZ(300px);
-}
-
-.content-carrousel-todo img {
-  width: 100%;
-  transition: all 300ms;
-  height: 100%;
-}
-
-.content-carrousel-todo img:hover {
-  transform: scale(1.2);
-  transition: all 300ms;
-}
-
-@-webkit-keyframes rotar {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
-
-@keyframes rotar {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
 .titulos__mitologicos {
   display: flex;
   justify-content: center;
@@ -805,7 +794,7 @@ audio {
 }
 
 .the__bloop {
-  background-image: url(../imagenes/bloop.jpg);
+  background-position: center;
 }
 
 .p__mitologicos {
@@ -892,12 +881,12 @@ audio {
 }
 
 @font-face {
-
+  .box__body--donar {
     font-family: titulos;
     src: url(..font/Brandon_bld.otf);
     font-family: parrafos;
     src: url(../font/Brandon_light.otf);
-  
+  }
 }
 .box__body--donar .h1__main {
   text-align: center;
@@ -959,4 +948,97 @@ audio {
 .box__body--donar .contacto .h1__donaciones {
   color: #343a40;
   font-size: 25px;
+}
+
+/* Index */
+@media only screen and (max-width: 992px) {
+  /* seccion de delfines */
+  .delfines__padding {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 682px) {
+  /* seccion de delfines */
+  .delfin__img {
+    height: 250px;
+  }
+}
+/* Media de fotos */
+@media only screen and (max-width: 944px) {
+  .ballenato {
+    background-size: 1800px;
+  }
+  .orca {
+    background-size: 1800px;
+  }
+  .main__index {
+    background-size: 1800px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .ballenato {
+    background-size: 1500px;
+  }
+  .orca {
+    background-size: 1500px;
+  }
+  .main__index {
+    background-size: 1500px;
+  }
+  .ballena-test {
+    float: right;
+  }
+}
+/* Foro */
+@media only screen and (min-width: 1600px) {
+  .box__cuerpo--foro {
+    grid-column: 1/8;
+  }
+  .box__derecha--foro {
+    display: grid;
+    grid-column: 10/13;
+    background-color: #161a1d;
+    z-index: 99;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .box__cuerpo--foro {
+    grid-column: 1/8;
+  }
+  .box__derecha--foro {
+    display: grid;
+    grid-column: 10/13;
+    background-color: #161a1d;
+    z-index: 99;
+  }
+}
+@media only screen and (max-width: 1328px) {
+  .box__derecha--foro {
+    display: grid;
+    grid-column: 9/13;
+    background-color: #161a1d;
+    z-index: 99;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .box__derecha--foro {
+    display: none;
+  }
+  .box__cuerpo--foro {
+    grid-column: 1/14;
+  }
+  .log__foro {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .box__derecha--foro {
+    display: none;
+  }
+  .log__foro {
+    display: none;
+  }
+  .box__cuerpo--foro {
+    grid-column: 1/14;
+  }
 }/*# sourceMappingURL=estilo.css.map */

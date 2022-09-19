@@ -2,6 +2,11 @@ footer {
     background-image: url(../imagenes/footer.jpg);
     background-size: cover;
 
+    .img-logo {
+        height: 50px;
+        width: 150px;
+    } 
+
     .box__copyright {
         text-align: center;
     }

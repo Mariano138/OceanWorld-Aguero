@@ -29,7 +29,21 @@ video {
 }
 
 .menu__derecha--main {
-    text-align: center
+    text-align: center;
+
+    .menu__derecha {
+     animation-delay: 1s;
+
+     ul {
+        li{
+            span {
+                font-size: 30px;
+                font-weight: bolder;
+                
+            }
+        }
+     }
+    }
 }
 .bienvenida {
     @include flex-center(); 
@@ -122,10 +136,8 @@ video {
     }
 
     .clima {
-        padding-left: 0;
-        padding-bottom: 0;
         margin-top: -2vw;
-        padding: 0vw 2.8228228228vw 0vw 2.8228228228vw;
+        padding: 0vw 2vw 0vw 2vw;
     }
 }
 

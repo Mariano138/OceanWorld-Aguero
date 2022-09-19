@@ -13,7 +13,24 @@
         ul {
             justify-content: space-between;
 
+            @for $navItem from 1 through 7 {
+                
+                .nav-item:nth-child(#{$navItem}) {
+                    animation-delay: $navItem*0.1s;
+                }
+              
+            }
+                @media only screen and (max-width: 992px) {
+                    
+                    @for $navItem from 1 through 5 {
+                
+                        .nav-item:nth-child(#{$navItem}) {
+                            animation: none;
+                        }
             
+                }
+                
+            }
             
             li {
                 list-style: none;
@@ -39,10 +56,15 @@
     
     }
     }
-
+    
     .box__foro--img {
         display: inline-block;
         width: 100%;
+    }
+
+    .logo-foro {
+        margin: 10px;
+        width: 200px;
     }
 
     .foro__h1 {
@@ -127,6 +149,38 @@
    }
  }
 
+}
+
+
+//LOGIN
+
+.login-bg {
+    background-image: url(../imagenes/fondo-foro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .nav-login {
+        background-color: #161a1d;
+        
+    }
+
+    ul {
+        
+        li {
+            
+            a {
+                color: #edede9;
+                text-decoration: none;
+                font-size: 20px;
+
+                &:hover {
+                    color: #d6ccc2;
+                }
+                
+            }
+        }
+    }
 }
 
 

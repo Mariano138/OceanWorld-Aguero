@@ -1,0 +1,150 @@
+/* Index */
+
+@media only screen and (max-width: 992px) {
+
+
+/* seccion de delfines */
+    
+    .delfines__padding {
+        padding-left: 50px;
+    }
+    
+}
+    
+    
+@media only screen and (max-width:682px) {
+        
+        
+    
+/* seccion de delfines */
+    
+    .delfin__img {
+        height: 250px;
+    }
+    
+} 
+    
+    
+/* Media de fotos */
+    
+    
+    
+    
+    
+@media only screen and (max-width: 944px) {
+        
+     .ballenato {
+        background-size: 1800px;
+     }
+    
+     .orca {
+        background-size: 1800px;
+     }
+       
+     .main__index {
+        background-size: 1800px;
+     }
+
+    
+} 
+    
+@media only screen and (max-width: 480px) {
+    
+        .ballenato {
+            background-size: 1500px;
+         }
+        
+         .orca {
+            background-size: 1500px;
+         }
+      
+        .main__index {
+        background-size: 1500px;
+        }
+
+        .ballena-test{
+            float: right;
+        }
+    
+}
+    
+    /* Foro */
+    
+@media only screen and (min-width: 1600px) {
+    
+        .box__cuerpo--foro {
+            grid-column: 1 / 8;
+        }
+    
+    
+    
+        .box__derecha--foro {
+         display: grid;
+         grid-column: 10 / 13;
+         background-color: #161a1d;
+         z-index: 99;
+        }
+    
+        
+}
+    
+@media only screen and (max-width: 1600px) {
+        .box__cuerpo--foro {
+            grid-column: 1 / 8;
+        }
+    
+    
+    
+        .box__derecha--foro {
+         display: grid;
+         grid-column: 10 / 13;
+         background-color: #161a1d;
+         z-index: 99;
+        }
+    
+       
+}
+    
+@media only screen and (max-width: 1328px) {
+        .box__derecha--foro {
+            display: grid;
+            grid-column: 9 / 13;
+            background-color: #161a1d;
+            z-index: 99;
+           }
+    
+}
+    
+@media only screen and (max-width: 1024px) {
+        
+    
+        .box__derecha--foro {
+            display: none;
+        }
+    
+        .box__cuerpo--foro {
+            grid-column: 1 / 14;
+        }
+    
+        .log__foro {
+            display: none;
+        }
+       
+}
+    
+    
+@media only screen and (max-width: 480px) {
+        .box__derecha--foro {
+            display: none;
+        }
+    
+        .log__foro {
+            display: none;
+        }
+       
+        .box__cuerpo--foro {
+            grid-column: 1 / 14;
+        }
+}
+    
+    
