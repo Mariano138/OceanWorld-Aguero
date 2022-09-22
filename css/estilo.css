@@ -880,6 +880,15 @@ audio {
   background-position: center;
 }
 
+.hr-mitologicos {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #1d3557;
+  height: 5vw;
+}
+
 @font-face {
   .box__body--donar {
     font-family: titulos;
